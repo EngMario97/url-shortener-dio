@@ -7,6 +7,10 @@ import swaggerDocument from '../src/swagger.json'
 const api = express()
 api.use(express.json())
 
+const port = process.env.PORT || 5000;
+
+
+
 const database = new MongoConnection()
 database.connect()
 
@@ -17,6 +21,6 @@ api.post('/shorten', urlController.shorten)
 api.get('/:hash', urlController.redirect)
 
 
-api.listen(5000, () => console.log('Express listening'))
+api.listen(port, () => console.log('Express listening'))
 
 
