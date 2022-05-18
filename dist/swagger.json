@@ -1,0 +1,68 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+        "title": "URL Shortener",
+        "description": "Documentation from URL Shortener",
+        "version": "1.0.0",
+        "license": {
+            "name": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+        }
+    },
+    "basePath": "/",
+    "paths": {
+        "/shorten": {
+            "post": {
+                "tags": [
+                    {
+                        "Shorten your URL": ""
+                    }
+                ],
+                "summary": "Shorten your URL",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "originURL": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "URL shortened successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "hash": {
+                                            "type": "string"
+                                        },
+                                        "originURL": {
+                                            "type": "string"
+                                        },
+                                        "shortURL": {
+                                            "type": "string"
+                                        },
+                                        "_id": {
+                                            "type": "string"
+                                        },
+                                        "__v": {
+                                            "type": "number"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
