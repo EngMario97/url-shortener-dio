@@ -6,7 +6,7 @@
   "scripts": {
     "build:watch": "tsc -w",
     "dev": "nodemon ./dist/index.js",
-    "start": "node index"
+    "start": "node index.js"
   },
   "author": "MarioRocha",
   "license": "ISC",
