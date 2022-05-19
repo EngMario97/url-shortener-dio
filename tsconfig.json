@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "baseUrl": "./",
+        "baseUrl": "./src",
         "moduleResolution": "node",
         "allowSyntheticDefaultImports": true,
         "noEmit": false,
@@ -24,5 +24,8 @@
         "resolveJsonModule": true,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-    }
+    },
+    "include": [
+        "src/**/**/*"
+    ]
 }
