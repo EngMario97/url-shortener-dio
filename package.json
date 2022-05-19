@@ -11,7 +11,7 @@
   "author": "MarioRocha",
   "license": "ISC",
   "dependencies": {
-    "@hasezoey/typegoose": "^5.9.2",
+    "@typegoose/typegoose": "^9.8.1",
     "@types/mongoose": "^5.11.97",
     "@typescript-eslint/eslint-plugin": "^5.25.0",
     "@typescript-eslint/parser": "^5.25.0",
