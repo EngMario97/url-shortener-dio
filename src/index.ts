@@ -2,7 +2,7 @@ import { URLController } from './controller/URLController'
 import express from 'express'
 import { MongoConnection } from './database/MongoConnection'
 import swaggerUi from 'swagger-ui-express'
-import swaggerDocument from '../src/swagger.json'
+import swaggerDocument from './swagger.json'
 
 const api = express()
 api.use(express.json())
